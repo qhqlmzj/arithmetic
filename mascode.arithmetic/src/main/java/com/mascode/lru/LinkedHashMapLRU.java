@@ -3,6 +3,12 @@ package com.mascode.lru;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * 实现1 完全由LinkedHashMap 进行LRUCache的实现
+ *
+ * @param <K>
+ * @param <V>
+ */
 public class LinkedHashMapLRU<K, V> implements LRUCache<K, V> {
     private LinkedHashMap<K, V> linkedHashMap = null;
 
@@ -24,6 +30,11 @@ public class LinkedHashMapLRU<K, V> implements LRUCache<K, V> {
             }
         }
         return null;
+    }
+
+    @Override
+    public String toString() {
+        return linkedHashMap.toString();
     }
 
     @Override
