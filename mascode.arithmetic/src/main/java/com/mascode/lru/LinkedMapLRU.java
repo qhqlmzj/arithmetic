@@ -41,7 +41,7 @@ public class LinkedMapLRU<K, V> implements LRUCache<K, V> {
 
     @Override
     public V get(K key) {
-        return null;
+        return map.get(key);
     }
 
     @Override
